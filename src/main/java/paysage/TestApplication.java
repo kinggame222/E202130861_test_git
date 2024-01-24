@@ -22,7 +22,7 @@ public class TestApplication extends Application {
         createSun(root);
         createHouse(root);
         createPond(root);
-
+        createCamel(root);
 
         Scene scene = new Scene(root, SCENE_WIDTH, SCENE_HEIGHT);
         primaryStage.setTitle("Paysage");
@@ -56,7 +56,6 @@ public class TestApplication extends Application {
 
         Rectangle door = new Rectangle(50, 100, Color.BROWN);
         door.setX(350);
-
         door.setY(300);
         root.getChildren().add(door);
 
@@ -78,6 +77,30 @@ public class TestApplication extends Application {
         root.getChildren().add(pond);
     }
 
+    private void createCamel(Pane root) {
+        //Dromadaire
+        Rectangle camelBody = new Rectangle(50, 30, Color.LIGHTGOLDENRODYELLOW);
+        camelBody.setX(500);
+        camelBody.setY(380);
+        root.getChildren().add(camelBody);
+
+        Rectangle camelHead = new Rectangle(30, 30, Color.LIGHTGOLDENRODYELLOW);
+        camelHead.setX(530);
+        camelHead.setY(350);
+        root.getChildren().add(camelHead);
+
+        Circle camelEye = new Circle(535, 365, 3, Color.BLACK);
+        root.getChildren().add(camelEye);
+
+        Rectangle camelLeg1 = new Rectangle(500, 410, 10, 20);
+        camelLeg1.setFill(Color.LIGHTGOLDENRODYELLOW);
+        root.getChildren().add(camelLeg1);
+
+        Rectangle camelLeg2 = new Rectangle(540, 410, 10, 20);
+        camelLeg2.setFill(Color.LIGHTGOLDENRODYELLOW);
+        root.getChildren().add(camelLeg2);
+
+    }
 
     public static void main(String[] args) {
         launch();
