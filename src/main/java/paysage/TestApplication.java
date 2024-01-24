@@ -56,6 +56,7 @@ public class TestApplication extends Application {
 
         Rectangle door = new Rectangle(50, 100, Color.BROWN);
         door.setX(350);
+
         door.setY(300);
         root.getChildren().add(door);
 
