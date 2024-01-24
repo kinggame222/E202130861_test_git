@@ -92,10 +92,12 @@ public class TestApplication extends Application {
         Circle camelEye = new Circle(535, 365, 3, Color.BLACK);
         root.getChildren().add(camelEye);
 
-        Rectangle camelLeg1 = new Rectangle(500, 410, 10, 20, Color.LIGHTGOLDENRODYELLOW);
+        Rectangle camelLeg1 = new Rectangle(500, 410, 10, 20);
+        camelLeg1.setFill(Color.LIGHTGOLDENRODYELLOW);
         root.getChildren().add(camelLeg1);
 
-        Rectangle camelLeg2 = new Rectangle(540, 410, 10, 20, Color.LIGHTGOLDENRODYELLOW);
+        Rectangle camelLeg2 = new Rectangle(540, 410, 10, 20);
+        camelLeg2.setFill(Color.LIGHTGOLDENRODYELLOW);
         root.getChildren().add(camelLeg2);
     }
 
