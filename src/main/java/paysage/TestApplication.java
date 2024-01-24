@@ -99,6 +99,7 @@ public class TestApplication extends Application {
         Rectangle camelLeg2 = new Rectangle(540, 410, 10, 20);
         camelLeg2.setFill(Color.LIGHTGOLDENRODYELLOW);
         root.getChildren().add(camelLeg2);
+
     }
 
     public static void main(String[] args) {
