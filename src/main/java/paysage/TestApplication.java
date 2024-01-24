@@ -78,7 +78,7 @@ public class TestApplication extends Application {
     }
 
     private void createCamel(Pane root) {
-        // Dromadaire
+        //Dromadaire
         Rectangle camelBody = new Rectangle(50, 30, Color.LIGHTGOLDENRODYELLOW);
         camelBody.setX(500);
         camelBody.setY(380);
